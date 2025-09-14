@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Título de la página</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestor de MACs</title>
+  <link rel="stylesheet" href="practica1.css" />
 </head>
 <body>
-
   <header>
-    REGISTRO DE MACS
+    <h1>Gestor de MACs</h1>
+    <
   </header>
 
-
   <main>
-   <section>
-      <h2>Agregar nueva MAC</h2>
+    <section>
+      <h2>Añadir dispositivo</h2>
       <form>
-        <label for="macInput">Dirección MAC:</label>
-        <input type="text" id="macInput" name="macInput" required>
-        <button type="submit">Añadir MAC</button>
+        <label for="grupo">Clase/Grupo:</label>
+        <select id="grupo" name="grupo">
+          <option value="1DAW1">1DAW1</option>
+          <option value="1DAW2">1DAW2</option>
+          <option value="1DAW3">1DAW3</option>
+          <option value="1DAW4">1DAW4</option>
+          <option value="PROFES">Profesores</option>
+        </select>
+
+        <label for="persona">Persona:</label>
+        <input type="text" id="persona" name="persona" />
+
+        <label for="mac">Dirección MAC:</label>
+        <input type="text" id="mac" name="mac" placeholder="AA:BB:CC:DD:EE:FF" />
+
+        <label for="comentario">Comentario:</label>
+        <input type="text" id="comentario" name="comentario" />
+
+        <input type="submit" value="Añadir" />
       </form>
     </section>
-    
 
+    <section>
+      <h2>Listado de dispositivos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Clase</th>
+            <th>Persona</th>
+            <th>MAC</th>
+            <th>Comentario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1DAW1</td>
+            <td>Ejemplo</td>
+            <td>74:56:3C:59:E1:0A</td>
+            <td>PC_1DAW1</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </main>
 
-
-
-
   <footer>
-   Mikel Arroyo Gomez
+    <p>Gestor de MACs - practica_01 - Mikel Arroyo Gomez</p>
   </footer>
-
 </body>
 </html>
