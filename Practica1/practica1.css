@@ -44,20 +44,8 @@ form button {
   cursor: pointer;
 }
 
-form button.eliminar {
+form button.peligro {
   background: red;
-}
-
-
-.listado {
-  display: flex;
-  gap: 20px;
-}
-
-.tabla, .panel {
-  flex: 1;
-  background: white;
-  padding: 15px;
 }
 
 table {

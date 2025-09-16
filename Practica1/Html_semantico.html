@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gestor de MACs</title>
-  <link rel="stylesheet" href="practica1.css">
+  <link rel="stylesheet" href="practica1.css" />
 </head>
+
 <body>
   <header>
     <h1>Gestor de MACs</h1>
   </header>
 
   <main>
-    
     <section class="form-section">
       <h2>Añadir dispositivo</h2>
       <form>
@@ -26,20 +27,20 @@
         </select>
 
         <label for="persona">Persona:</label>
-        <input type="text" id="persona" name="persona">
+        <input type="text" id="persona" name="persona" />
 
         <label for="mac">Dirección MAC:</label>
-        <input type="text" id="mac" name="mac" placeholder="AA:BB:CC:DD:EE:FF">
+        <input type="text" id="mac" name="mac" placeholder="AA:BB:CC:DD:EE:FF" />
 
         <label for="comentario">Comentario:</label>
-        <input type="text" id="comentario" name="comentario">
+        <input type="text" id="comentario" name="comentario" />
 
-        <input type="submit" value="Añadir">
+        <input type="submit" value="Añadir" />
       </form>
     </section>
 
-    <section class="listado">
-      <div class="tabla">
+    <section>
+      <div>
         <h2>Listado de dispositivos</h2>
         <table>
           <thead>
@@ -63,22 +64,22 @@
         </table>
       </div>
 
-      <aside class="panel">
+      <aside>
         <h2>Opciones del registro</h2>
         <form>
           <label>Persona:</label>
-          <input type="text" value="Ejemplo">
+          <input type="text" value="Ejemplo" />
 
           <label>MAC:</label>
-          <input type="text" value="74:56:3C:59:E1:0A">
+          <input type="text" value="74:56:3C:59:E1:0A" />
 
           <label>Comentario:</label>
-          <input type="text" value="PC_1DAW1">
+          <input type="text" value="PC_1DAW1" />
 
           <div class="acciones">
             <button type="button">Editar</button>
             <button type="button">Confirmar</button>
-            <button type="button" class="danger">Eliminar</button>
+            <button type="button" class="peligro">Eliminar</button>
           </div>
         </form>
       </aside>
@@ -89,4 +90,5 @@
     <p>Gestor de MACs - Practica01 - Mikel Arroyo Gomez</p>
   </footer>
 </body>
+
 </html>
