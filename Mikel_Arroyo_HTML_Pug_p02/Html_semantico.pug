@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="practica02.css") 
+body 
+  header 
+    h1 Gestor de Macs 
+  main
+    section.form-section 
+      h2 Añadir dispositivo
+      form
+        label(for="grupo") Clase/grupo
+        select(id="grupo" name="grupo")
+          option(value="1DAW1") DAW1
+          option(value="1DAW2") DAW1 
+          option(value="1DAW3") DAW1 
+          option(value="1DAW4") DAW1 
+          option(value="1DAW5") DAW1 
+          option(value="1DAW6") DAW1
+        label(for="grupo") Persona 
+        input(type="text" id="persona" name="persona")
+        label(for="mac") Direccion Mac
+        input(type="text" id="mac" name="mac" placeholder="AA:BB:CC:DD:FF")
+        label(for="comentario") Comentario
+        input(type="text" id="comentario" name="comentario")
+        input(type="submit" value="Añadir")
+    section
+      div
+        h2 Listado de dispositivos
+        table 
+          thead
+            tr 
+              th Clase
+              th Persona 
+              th Mac 
+              th Comentario 
+              th Seleccionar 
+          
+          tbody
+            tr 
+              td 1DAW1
+              td Ejemplo 
+              td 74:55:3C:59:E1:0A
+              td PC_1DAW 
+              td 
+                button ➡
+      aside 
+        h2 Opciones del registro
+        form
+          label Persona 
+          input(type="text" value="Ejemplo")
+
+          label MAC 
+          input(type="text" value="74:56:3C:59:E1:0A") 
+
+          label Comentario
+          input(type="text" value="PC_1DAW")
+
+          div.acciones
+            button(type="button") Editar
+            button(type="button") Confirmar
+            button(type="button" class="peligro") Eliminar
+  footer
+    p Gestor de MACs - Practica01 - Mikel Arroyo Gomez
+
+
+              
