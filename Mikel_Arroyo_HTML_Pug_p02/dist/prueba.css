@@ -1,11 +1,12 @@
 body {
   width: 80%;
   font-family: Arial, sans-serif;
-  margin: 0 auto; /* centramos el body */
+  margin: 0 auto;
   background: #f4f4f4;
 }
 
-header, footer {
+header,
+footer {
   background: #333;
   color: white;
   padding: 10px;
@@ -14,8 +15,11 @@ header, footer {
 
 main {
   padding: 20px;
-  background-color: #f0c674; /* naranja suave */
-  text-align: center; /* 👈 centramos el contenido dentro */
+  background-color: #f0c674;
+  text-align: center;
+}
+main section {
+  padding-top: 5%;
 }
 
 h2 {
@@ -23,35 +27,33 @@ h2 {
 }
 
 /* Formulario principal */
-.form-section {
-  background: #aed6f1; /* azul claro */
+form.form-section {
+  background: #aed6f1;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
   width: 80%;
-  margin: 0 auto 20px auto; /* 👈 centrado */
+  margin: 0 auto 20px auto;
 }
-
-form label {
+form.form-section label {
   margin-right: 5px;
 }
-
-form input, form select, form button {
+form.form-section input,
+form.form-section select,
+form.form-section button {
   padding: 6px;
   margin: 5px;
   width: auto;
   display: inline-block;
 }
-
-form button {
+form.form-section button {
   background: #4f8cff;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
-
-form button.peligro {
+form.form-section button.peligro {
   background: #e74c3c;
 }
 
@@ -60,31 +62,29 @@ table {
   width: 80%;
   border: 1px solid #ccc;
   border-collapse: collapse;
-  margin: 20px auto; /* 👈 centrado */
+  margin: 20px auto;
 }
-
-th, td {
+table th,
+table td {
   border: 1px solid #000;
   padding: 6px;
   text-align: center;
   background-color: #f9f9a7;
 }
 
-/* Botones de acciones */
-.acciones {
+button.acciones {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-
-.acciones button {
+button.acciones button {
   margin: 5px;
 }
 
 /* Aside */
 aside {
   width: 80%;
-  margin: 20px auto; /* 👈 centrado */
+  margin: 20px auto;
   padding: 15px;
   background: #d5f5e3;
   border-radius: 8px;
