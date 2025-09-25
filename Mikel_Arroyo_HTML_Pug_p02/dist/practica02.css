@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header,
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* === Formulario: Añadir dispositivo === */
+section.form-section {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 69%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+section.form-section form label {
+  display: inline-block;
+  margin-top: 10px;
+  width: 33%;
+}
+section.form-section form input[type=submit] {
+  width: 32%;
+  background: #4f8cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+section.form-section form input,
+section.form-section form select,
+section.form-section form button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+section.form-section form button {
+  background: #4f8cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+section.form-section form button.peligro {
+  background: red;
+}
+section.form-section form div {
+  text-align: right;
+}
+
+/* === Aside: Opciones del registro (igual que formulario) === */
+aside {
+  width: 29%;
+  display: inline-block;
+  vertical-align: top;
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+aside form label {
+  display: inline-block;
+  margin-top: 10px;
+  width: 33%;
+}
+aside form input,
+aside form select,
+aside form button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+aside form .acciones {
+  text-align: right;
+}
+aside form .acciones button {
+  background: #4f8cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+aside form .acciones button.peligro {
+  background: red;
+}
+
+/* === Tabla: Listado de dispositivos === */
+table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+}
+table thead {
+  background: #eaeaea;
+}
+
+/* === Botones de acciones === */
+.acciones button {
+  margin-top: 10px;
+  border-radius: 4px;
+}
