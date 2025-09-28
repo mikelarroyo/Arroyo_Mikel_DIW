@@ -1,0 +1,87 @@
+extends layout
+
+
+block macs
+  section.form-section
+    h2 Añadir dispositivo MAC
+    form
+      // ...tu formulario de MACs aquí...
+      label(for="grupo") Clase/Grupo:
+      select#grupo(name="grupo")
+        option(value="1DAW1") DAW1
+        option(value="1DAW2") DAW2
+        option(value="1DAW3") DAW3
+        option(value="1DAW4") DAW4
+        option(value="PROFES") Profesores
+      label(for="persona") Persona:
+      input#persona(type="text" name="persona")
+      label(for="mac") Dirección MAC:
+      input#mac(type="text" name="mac" placeholder="AA:BB:CC:DD:EE:FF")
+      label(for="comentario") Comentario:
+      input#comentario(type="text" name="comentario")
+      div
+        input(type="submit" value="Añadir")
+
+  section
+    h2 Listado de dispositivos MAC
+    table
+      thead
+        tr
+          th Clase
+          th Persona
+          th MAC
+          th Comentario
+          th Seleccionar
+      tbody
+        tr
+          td 1DAW1
+          td Ejemplo
+          td 74:56:3C:59:E1:0A
+          td PC_1DAW1
+          td
+            button ➡
+block opciones
+  aside
+    h2 Opciones del registro
+    form
+      label Persona:
+      input(type="text" value="Ejemplo")
+      label MAC:
+      input(type="text" value="74:56:3C:59:E1:0A")
+      label Comentario:
+      input(type="text" value="PC_1DAW1")
+      .acciones
+        button(type="button") Editar
+        button(type="button") Confirmar
+        button(type="button" class="peligro") Eliminar
+
+
+block ips
+  section.form-section
+    h2 Añadir IP
+    form
+      label(for="ip") Dirección IP:
+      input#ip(type="text" name="ip" placeholder="192.168.1.1")
+      label(for="comentarioip") Comentario:
+      input#comentarioip(type="text" name="comentarioip")
+      div
+        input(type="submit" value="Añadir IP")
+
+
+
+
+
+  section
+    h2 Listado de IPs
+    table
+      thead
+        tr
+          th IP
+          th Comentario
+          th Seleccionar
+      tbody
+        tr
+          td 192.168.1.1
+          td Ejemplo IP
+          td
+            button ➡
