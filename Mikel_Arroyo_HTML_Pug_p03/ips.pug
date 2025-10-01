@@ -1,0 +1,25 @@
+
+  section.form-section
+    h2 Añadir IP
+    form
+      label(for="ip") Dirección IP:
+      input#ip(type="text" name="ip" placeholder="192.168.1.1")
+      label(for="comentarioip") Comentario:
+      input#comentarioip(type="text" name="comentarioip")
+      div
+        input(type="submit" value="Añadir IP")
+
+  section
+    h2 Listado de IPs
+    table
+      thead
+        tr
+          th IP
+          th Comentario
+          th Seleccionar
+      tbody
+        tr
+          td 192.168.1.1
+          td Ejemplo IP
+          td
+            button ➡

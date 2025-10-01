@@ -25,10 +25,12 @@ h2 {
 }
 
 /* Formulario: */
-.form-section {
+section.form-section {
   background: white;
   padding: 15px;
   margin-bottom: 20px;
+  width: 69%;
+  display: inline-block;
 }
 
 form label {
@@ -78,3 +80,7 @@ th, td {
   margin-top: 10px;
 }
 
+aside {
+  width: 29%;
+  display: inline-block;
+}

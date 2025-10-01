@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de MACs e IPs</title>
+    <link rel="stylesheet" href="practica02.css">
+  </head>
+  <body>
+    <header>
+      <h1>Gestor de MACs e IPs</h1>
+    </header>
+    <main></main>
+    <section class="form-section">
+      <h2>Añadir dispositivo MAC</h2>
+      <form>
+        <!-- ...tu formulario de MACs aquí...-->
+        <label for="grupo">Clase/Grupo:</label>
+        <select id="grupo" name="grupo">
+          <option value="1DAW1">DAW1</option>
+          <option value="1DAW2">DAW2</option>
+          <option value="1DAW3">DAW3</option>
+          <option value="1DAW4">DAW4</option>
+          <option value="PROFES">Profesores</option>
+        </select>
+        <label for="persona">Persona:</label>
+        <input id="persona" type="text" name="persona">
+        <label for="mac">Dirección MAC:</label>
+        <input id="mac" type="text" name="mac" placeholder="AA:BB:CC:DD:EE:FF">
+        <label for="comentario">Comentario:</label>
+        <input id="comentario" type="text" name="comentario">
+        <div>
+          <input type="submit" value="Añadir">
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2>Listado de dispositivos MAC</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Clase</th>
+            <th>Persona</th>
+            <th>MAC</th>
+            <th>Comentario</th>
+            <th>Seleccionar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1DAW1</td>
+            <td>Ejemplo</td>
+            <td>74:56:3C:59:E1:0A</td>
+            <td>PC_1DAW1</td>
+            <td>
+              <button>➡</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+      <p>Gestor de MACs - Practica01 - Mikel Arroyo Gomez</p>
+    </footer>
+  </body>
+</html>
