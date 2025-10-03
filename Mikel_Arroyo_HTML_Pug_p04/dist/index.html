@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de MACs e IPs</title>
+  <link rel="stylesheet" href="practica02.css">
+</head>
+<body>
+  <header>
+    <h1>Gestor de MACs e IPs</h1>
+  </header>
+  <main></main>
+  <section class="form-section">
+    <h2>Añadir dispositivo MAC</h2>
+    <form>
+      <!-- ...tu formulario de MACs aquí...-->
+      <label class="form__label" for="grupo">Clase/Grupo:</label>
+      <select class="form_select" id="grupo" name="grupo">
+        <option value="1DAW1">DAW1</option>
+        <option value="1DAW2">DAW2</option>
+        <option value="1DAW3">DAW3</option>
+        <option value="1DAW4">DAW4</option>
+        <option value="PROFES">Profesores</option>
+      </select>
+      <label class="form__label" for="persona">Persona:</label>
+      <input class="form__input" id="persona" type="text" name="persona">
+      <label class="form__label" for="mac">Dirección MAC:</label>
+      <input class="form__input" id="mac" type="text" name="mac" placeholder="AA:BB:CC:DD:EE:FF">
+      <label class="form__label" for="comentario">Comentario:</label>
+      <input class="form__input" id="comentario" type="text" name="comentario">
+      <div class="form_actions">
+        <input class="form__submit" type="submit" value="Añadir">
+      </div>
+    </form>
+  </section>
+  <section>
+    <h2 class="title">Listado de dispositivos MAC</h2>
+    <table class="table">
+      <thead class="table__head">
+        <tr>
+          <th class="table__header">Clase</th>
+          <th class="table__header">Persona</th>
+          <th class="table__header">MAC</th>
+          <th class="table__header">Comentario</th>
+          <th class="table__header">Seleccionar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="table__cell">1DAW1</td>
+          <td class="table__cell">Ejemplo</td>
+          <td class="table__cell">74:56:3C:59:E1:0A</td>
+          <td class="table__cell">PC_1DAW1</td>
+          <td>
+            <button class="actions__button">➡</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <aside>
+    <h2 class="title">Opciones del registro</h2>
+    <form>
+      <label class="sidebar__label">Persona:</label>
+      <input class="sidebar__input" type="text" value="Ejemplo">
+      <label class="sidebar__label">MAC:</label>
+      <input class="sidebar__input" type="text" value="74:56:3C:59:E1:0A">
+      <label class="sidebar__label">Comentario:</label>
+      <input class="sidebar__input" type="text" value="PC_1DAW1">
+      <div class="sidebar__actions">
+        <button class="sidebar__button" type="button">Editar</button>
+        <button class="sidebar__button" type="button">Confirmar</button>
+        <button class="sidebar__button sidebar__button--danger peligro" type="button">Eliminar</button>
+      </div>
+    </form>
+  </aside>
+  <section class="form-section">
+    <h2>Añadir IP</h2>
+    <form>
+      <label class="form__label" for="ip">Dirección IP:</label>
+      <input class="form__input" id="ip" type="text" name="ip" placeholder="192.168.1.1">
+      <label class="form__label" for="comentarioip">Comentario:</label>
+      <input class="form__input" id="comentarioip" type="text" name="comentarioip">
+      <div class="form_actions">
+        <input class="form__submit" type="submit" value="Añadir IP">
+      </div>
+    </form>
+  </section>
+  <section>
+    <h2 class="title">Listado de IPs</h2>
+    <table class="table">
+      <thead class="table__head">
+        <tr>
+          <th class="table__header">IP</th>
+          <th class="table__header">Comentario</th>
+          <th class="table__header">Seleccionar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="table__cell">192.168.1.1</td>
+          <td class="table__cell">Ejemplo IP</td>
+          <td class="table__cell">
+            <button class="actions__buttons">➡ </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer>
+    <p>Gestor de MACs - Practica01 - Mikel Arroyo Gomez</p>
+  </footer>
+</body>

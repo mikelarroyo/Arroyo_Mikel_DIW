@@ -1,0 +1,40 @@
+
+section.form-section
+  h2 Añadir dispositivo MAC
+  form
+    // ...tu formulario de MACs aquí...
+    label.form__label(for="grupo") Clase/Grupo:
+    select.form_select#grupo(name="grupo")
+      option(value="1DAW1") DAW1
+      option(value="1DAW2") DAW2
+      option(value="1DAW3") DAW3
+      option(value="1DAW4") DAW4
+      option(value="PROFES") Profesores
+    label.form__label(for="persona") Persona:
+    input.form__input#persona(type="text" name="persona")
+    label.form__label(for="mac") Dirección MAC:
+    input.form__input#mac(type="text" name="mac" placeholder="AA:BB:CC:DD:EE:FF")
+    label.form__label(for="comentario") Comentario:
+    input.form__input#comentario(type="text" name="comentario")
+    div.form_actions
+      input.form__submit(type="submit" value="Añadir")
+
+section
+  h2.title Listado de dispositivos MAC
+  table.table
+    thead.table__head
+      tr
+        th.table__header Clase
+        th.table__header Persona
+        th.table__header MAC
+        th.table__header Comentario
+        th.table__header Seleccionar
+    tbody
+      tr
+        td.table__cell 1DAW1
+        td.table__cell Ejemplo
+        td.table__cell 74:56:3C:59:E1:0A
+        td.table__cell PC_1DAW1
+        td
+          button.actions__button ➡
+          

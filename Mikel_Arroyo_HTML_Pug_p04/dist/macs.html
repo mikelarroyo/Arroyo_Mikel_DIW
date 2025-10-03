@@ -1,0 +1,49 @@
+
+<section class="form-section">
+  <h2>Añadir dispositivo MAC</h2>
+  <form>
+    <!-- ...tu formulario de MACs aquí...-->
+    <label class="form__label" for="grupo">Clase/Grupo:</label>
+    <select class="form_select" id="grupo" name="grupo">
+      <option value="1DAW1">DAW1</option>
+      <option value="1DAW2">DAW2</option>
+      <option value="1DAW3">DAW3</option>
+      <option value="1DAW4">DAW4</option>
+      <option value="PROFES">Profesores</option>
+    </select>
+    <label class="form__label" for="persona">Persona:</label>
+    <input class="form__input" id="persona" type="text" name="persona"/>
+    <label class="form__label" for="mac">Dirección MAC:</label>
+    <input class="form__input" id="mac" type="text" name="mac" placeholder="AA:BB:CC:DD:EE:FF"/>
+    <label class="form__label" for="comentario">Comentario:</label>
+    <input class="form__input" id="comentario" type="text" name="comentario"/>
+    <div class="form_actions">
+      <input class="form__submit" type="submit" value="Añadir"/>
+    </div>
+  </form>
+</section>
+<section>
+  <h2 class="title">Listado de dispositivos MAC</h2>
+  <table class="table">
+    <thead class="table__head">
+      <tr>
+        <th class="table__header">Clase</th>
+        <th class="table__header">Persona</th>
+        <th class="table__header">MAC</th>
+        <th class="table__header">Comentario</th>
+        <th class="table__header">Seleccionar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="table__cell">1DAW1</td>
+        <td class="table__cell">Ejemplo</td>
+        <td class="table__cell">74:56:3C:59:E1:0A</td>
+        <td class="table__cell">PC_1DAW1</td>
+        <td>
+          <button class="actions__button">➡</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>

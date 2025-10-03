@@ -1,0 +1,34 @@
+
+<section class="form-section">
+  <h2>Añadir IP</h2>
+  <form>
+    <label class="form__label" for="ip">Dirección IP:</label>
+    <input class="form__input" id="ip" type="text" name="ip" placeholder="192.168.1.1"/>
+    <label class="form__label" for="comentarioip">Comentario:</label>
+    <input class="form__input" id="comentarioip" type="text" name="comentarioip"/>
+    <div class="form_actions">
+      <input class="form__submit" type="submit" value="Añadir IP"/>
+    </div>
+  </form>
+</section>
+<section>
+  <h2 class="title">Listado de IPs</h2>
+  <table class="table">
+    <thead class="table__head">
+      <tr>
+        <th class="table__header">IP</th>
+        <th class="table__header">Comentario</th>
+        <th class="table__header">Seleccionar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="table__cell">192.168.1.1</td>
+        <td class="table__cell">Ejemplo IP</td>
+        <td class="table__cell">
+          <button class="actions__buttons">➡ </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
