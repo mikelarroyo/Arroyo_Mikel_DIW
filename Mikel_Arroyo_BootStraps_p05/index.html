@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestor de MACs</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- HEADER -->
+    <nav class="navbar bg-dark">
+        <div class="container-fluid justify-content-center">
+            <span class="navbar-brand mb-0 h1 text-white text-uppercase">
+                Gestor de MACs
+            </span>
+        </div>
+    </nav>
+
+    <!-- BODY -->
+    <main class="container my-5">
+        <div class="row g-4">
+            <!--  Columna izquierda: Añadir dispositivo -->
+            <div class="col-12 col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-4">Añadir dispositivo</h5>
+
+                        <form>
+                            <!-- Fila 1: Clase / Persona / MAC -->
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <label for="clase" class="form-label">Clase / Grupo</label>
+                                    <select class="form-select" id="clase">
+                                        <option selected>Elige...</option>
+                                        <option value="1">1º DAW</option>
+                                        <option value="2">1º DAM</option>
+                                        <option value="3">2º DAW</option>
+                                        <option value="4">2º DAM</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="persona" class="form-label">Persona</label>
+                                    <input type="text" class="form-control" id="persona"
+                                        placeholder="Nombre y apellidos" />
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="mac" class="form-label">Dirección MAC</label>
+                                    <input type="text" class="form-control" id="mac" value="AA:BB:CC:DD:EE:FF" />
+                                </div>
+                            </div>
+
+                            <!-- Fila 2: Comentario -->
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <label for="comentario" class="form-label">Comentario</label>
+                                    <input type="text" class="form-control" id="comentario"
+                                        placeholder="Ej: Portátil clase 1" />
+                                </div>
+                            </div>
+
+                            <!-- Botón -->
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-plus-circle me-2"></i> Añadir dispositivo
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Columna derecha: Opciones del registro -->
+            <div class="col-12 col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-4">Opciones del registro</h5>
+
+                        <!-- Campos flotantes -->
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" id="optPersona" placeholder="Ejemplo" />
+                            <label for="optPersona">Persona</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="optMac" placeholder="74:56:3C:59:E1:0A" />
+                            <label for="optMac">Dirección MAC</label>
+                        </div>
+
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" id="optComentario" placeholder="Comentario" />
+                            <label for="optComentario">Comentario</label>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="row mt-3 text-center">
+                            <div class="col">
+                                <button class="btn btn-primary w-100" type="button">Editar</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-success w-100" type="button">Confirmar</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-danger w-100" type="button">Eliminar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LISTADO DE DISPOSITIVOS -->
+        <div class="card shadow-sm mt-4">
+            <div class="card-body">
+                <h5 class="card-title mb-3 text-center">Listado de dispositivos</h5>
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Clase</th>
+                                <th scope="col">Persona</th>
+                                <th scope="col">MAC</th>
+                                <th scope="col">Comentario</th>
+                                <th scope="col" class="text-center">Seleccionar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">DAW2</th>
+                                <td>Mikel</td>
+                                <td>AA:BB:CC:11:22:33</td>
+                                <td>Portátil clase 1</td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-outline-secondary">Seleccionar</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">DAW2</th>
+                                <td>David</td>
+                                <td>DD:EE:FF:44:55:66</td>
+                                <td>PC sobremesa</td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-outline-secondary">Seleccionar</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">DAM1</th>
+                                <td>Aurora</td>
+                                <td>77:88:99:AA:BB:CC</td>
+                                <td>Tablet aula</td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-outline-secondary">Seleccionar</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">DAM2</th>
+                                <td>Aitor</td>
+                                <td>25:32:99:AA:BB:CC</td>
+                                <td>Portátil clase</td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-outline-secondary">Seleccionar</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">DAW1</th>
+                                <td>Ainara</td>
+                                <td>67:88:99:AA:BB:CC</td>
+                                <td>PC sobremesa</td>
+                                <td class="text-center">
+                                    <button class="btn btn-sm btn-outline-secondary">Seleccionar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <small>Gestor de MACs · Práctica Bootstrap · Mikel Arroyo Gómez</small>
+    </footer>
+</body>
+
+</html>
