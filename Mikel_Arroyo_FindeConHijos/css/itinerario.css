@@ -1,0 +1,57 @@
+.bg-secondary {
+    background-color: #3279c0 !important;
+}
+
+.bi-star,
+.bi-star-fill {
+    width: 20px;
+    height: 20px;
+}
+
+p.fs-5 {
+    font-weight: 600;
+}
+
+p.small {
+    color: #555;
+}
+
+.itinerario-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  height: 100%;
+}
+
+/* Imagen */
+.itinerario-item .bg-secondary {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Texto */
+.itinerario-item h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.itinerario-item p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+
+/* Footer fijo con estrellas */
+.footer-valoracion {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+    padding: 8px 0;
+}
+

@@ -1,0 +1,9 @@
+.main.container
+  // canvas para el gráfico
+  canvas#myChart.my-4.w-100(width='900' height='380')
+
+append scripts
+  // Chart.js CDN (práctica con CDN)
+  script(src='https://cdn.jsdelivr.net/npm/chart.js')
+  // script local que crea el chart (ruta relativa desde el HTML generado)
+  script(src='js/dashboard.js' defer)

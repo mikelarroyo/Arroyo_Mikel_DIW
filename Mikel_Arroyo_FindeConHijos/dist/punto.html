@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Astro v5.13.2">
+    <title>AViajarFamilia · Bootstrap v5.3</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <script src="../js/color-modes.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <meta name="theme-color" content="#712cf9">
+    <link rel="stylesheet" href="../css/pricing.css">
+    <link rel="stylesheet" href="../sign-in.css">
+    <link rel="stylesheet" href="../css/star.css">
+    <link rel="stylesheet" href="../css/itinerario.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+  </head>
+  <body>
+    <header><nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navbar principal">
+    <div class="container-fluid">
+
+        <!-- LOGO + NOMBRE -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+            </svg>
+            AViajarFamilia
+
+        </a>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIndex"
+            aria-controls="navbarIndex" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENÚ -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarIndex">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Te recomendamos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="itinerario.html">Mis itinerarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="punto.html">Mi cuenta</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+    </header>
+    <main>
+      <div class="container mt-5">
+        <div class="row">
+          <!-- Columna izquierda (imagen + texto)-->
+          <div class="col-12 col-lg-8">
+            <!-- Un único contenedor para que el texto envuelva a la imagen-->
+            <div class="position-relative">
+              <!-- Imagen cuadrada:-->
+              <!-- - en móvil: bloque centrado (mx-auto) con margen inferior mb-3-->
+              <!-- - desde md: flotada a la izquierda (float-md-start) y con espacio a la derecha (me-md-3)-->
+              <div class="bg-secondary rounded-2 mx-auto mb-3 float-md-start me-md-3" style="width:160px;height:160px;"></div>
+              <h5 class="mt-1 mb-2">Nombre de la ubicación</h5>
+              <p class="small text-muted">
+                Aquí irá el texto: qué ver, qué hacer, dónde comer, cómo entretener a los niños… 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, itaque modi eligendi voluptas
+                dolorum sit laboriosam maxime nostrum nihil ab commodi quae facere vel asperiores qui eius culpa
+                porro repellat. Suscipit quisquam qui totam repellat reprehenderit et accusamus optio perspiciatis
+                vel ab expedita quod doloribus voluptates temporibus animi facilis, sapiente eveniet blanditiis
+                perferendis odio! Quidem asperiores nostrum itaque temporibus ea? Sint consectetur doloremque ea a quo?
+                Fugit unde tempore nulla inventore beatae officia sapiente quaerat at consequatur sequi similique
+                exercitationem, amet distinctio numquam error excepturi ex velit autem magni facilis! In ut quae
+                doloribus provident ex impedit beatae quis perferendis culpa vero ipsa dolores, rem quibusdam
+                architecto veritatis voluptatum sapiente esse id ad obcaecati aliquid repudiandae incidunt?
+              </p>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h3 class="h6 mb-3">Comentarios</h3>
+            <div class="mb-3 p-3 border rounded bg-light"><strong>Usuario Anónimo</strong>
+              <p class="mb-1 mt-2">Pequeño comentario de ejemplo para ver el bloque.</p>
+            </div>
+            <div class="mb-3 p-3 border rounded bg-light"><strong>María López</strong>
+              <p class="mb-1 mt-2">Excelente lugar para ir con niños, hay muchas zonas verdes y actividades familiares.</p>
+            </div>
+            <div class="mb-3 p-3 border rounded bg-light"><strong>Juan García</strong>
+              <p class="mb-1 mt-2">El restaurante cercano es muy recomendable, buena comida y precios razonables.</p>
+            </div>
+            <div class="text-center mt-4">
+              <button class="btn border-0 bg-transparent" type="button" title="Añadir comentario">
+                <svg class="bi bi-plus-circle-fill" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#6c757d" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

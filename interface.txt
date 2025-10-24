@@ -1,0 +1,7 @@
+Trabajo interfaces: 
+ - Vamos a hacer cualquier página que queramos con bootstraps 
+ - Coger y la aplicacion que tenemos que hacemos con mac lo vamos a hacer con boostrap. 
+
+Ejemplo: o vamos a utilizar pug ni sass ni nada, solo quiero juntar trozos algo parecido utilizando bootstraps
+darle una vuelta a la ayuda. copiar y pegar y que las cosas exploten.
+Desde 0 con bootstrap directamente, que sea visualmente parecido.

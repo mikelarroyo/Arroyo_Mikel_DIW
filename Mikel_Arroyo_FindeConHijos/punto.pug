@@ -1,0 +1,54 @@
+extends layout.pug
+
+block navbar
+    include componentes/navbar_punto.html
+
+block content
+    .container.mt-5
+        .row
+            // Columna izquierda (imagen + texto)
+            .col-12.col-lg-8
+                // Un único contenedor para que el texto envuelva a la imagen
+                .position-relative
+                    // Imagen cuadrada:
+                    // - en móvil: bloque centrado (mx-auto) con margen inferior mb-3
+                    // - desde md: flotada a la izquierda (float-md-start) y con espacio a la derecha (me-md-3)
+                    .bg-secondary.rounded-2.mx-auto.mb-3.float-md-start.me-md-3(style="width:160px;height:160px;")
+
+                    h5.mt-1.mb-2 Nombre de la ubicación
+                    p.small.text-muted
+                        | Aquí irá el texto: qué ver, qué hacer, dónde comer, cómo entretener a los niños… 
+                        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, itaque modi eligendi voluptas
+                        | dolorum sit laboriosam maxime nostrum nihil ab commodi quae facere vel asperiores qui eius culpa
+                        | porro repellat. Suscipit quisquam qui totam repellat reprehenderit et accusamus optio perspiciatis
+                        | vel ab expedita quod doloribus voluptates temporibus animi facilis, sapiente eveniet blanditiis
+                        | perferendis odio! Quidem asperiores nostrum itaque temporibus ea? Sint consectetur doloremque ea a quo?
+                        | Fugit unde tempore nulla inventore beatae officia sapiente quaerat at consequatur sequi similique
+                        | exercitationem, amet distinctio numquam error excepturi ex velit autem magni facilis! In ut quae
+                        | doloribus provident ex impedit beatae quis perferendis culpa vero ipsa dolores, rem quibusdam
+                        | architecto veritatis voluptatum sapiente esse id ad obcaecati aliquid repudiandae incidunt?
+
+                
+                    .clearfix
+
+          
+            .col-12.col-lg-4
+                h3.h6.mb-3 Comentarios
+
+                .mb-3.p-3.border.rounded.bg-light
+                    strong Usuario Anónimo
+                    p.mb-1.mt-2 Pequeño comentario de ejemplo para ver el bloque.
+
+                .mb-3.p-3.border.rounded.bg-light
+                    strong María López
+                    p.mb-1.mt-2 Excelente lugar para ir con niños, hay muchas zonas verdes y actividades familiares.
+
+                .mb-3.p-3.border.rounded.bg-light
+                    strong Juan García
+                    p.mb-1.mt-2 El restaurante cercano es muy recomendable, buena comida y precios razonables.
+
+                .text-center.mt-4
+                    button.btn.border-0.bg-transparent(type="button" title="Añadir comentario")
+                        svg(xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#6c757d" class="bi bi-plus-circle-fill" viewBox="0 0 16 16")
+                            path(d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z")
+

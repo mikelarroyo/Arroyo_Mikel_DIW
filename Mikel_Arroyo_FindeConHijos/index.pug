@@ -1,0 +1,17 @@
+extends layout.pug
+
+block navbar
+  include componentes/navbar_index.html
+
+block content
+  .container.mt-3
+    h1.text-center.mb-4 Sugerencias de itinerarios
+    p.text-center.text-muted Encuentra destinos familiares recomendados.
+
+    .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4
+      include componentes/itinerario_1.pug
+      include componentes/itinerario_1.pug
+      include componentes/itinerario_1.pug
+      include componentes/itinerario_1.pug
+      include componentes/itinerario_1.pug
+      include componentes/itinerario_1.pug
