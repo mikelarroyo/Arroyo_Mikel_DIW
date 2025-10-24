@@ -1,16 +1,27 @@
 .col-12.col-md-6.col-lg-4
-    .row
-        .col-11.col-lg-10.pe-0
-            .bg-secondary.ratio.ratio-1x1.rounded-2
-        .col-1.col-lg-2.ps-0.align-self-end
-            each star in [1, 2, 3]
-                svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gold" class="mx-1" viewBox="0 0 16 16")
-                    path(d="M3.612 15.443 4.64 9.92.763 6.173l5.145-.748L8 0l2.092 5.425 5.145.748-3.877 3.747 1.028 5.523L8 12.347l-4.389 3.096z")
-            each star in [1, 2]
-                svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ccc" class="mx-1" viewBox="0 0 16 16")
-                    path(d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256a.513.513 0 0 0 .746-.592l-.83-4.73 3.523-3.356a.513.513 0 0 0-.285-.874l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.194l-4.898.696a.513.513 0 0 0-.285.874l3.523 3.356-.83 4.73z")
+  .row
+    // Imagen o recuadro
+    .col-11.col-lg-10.pe-0
+      .bg-secondary.ratio.ratio-1x1.rounded-2
 
-    p.fs-5.mb-0 Nombre
-    p.small Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        |  Corporis quisquam ut, itaque deleniti inventore praesentium quae,
-        |  rem alias animi magni dolores tempora molestias quidem autem earum est numquam!
+    // Columna para las estrellas (alineadas al final)
+    .col-1.col-lg-2.ps-0.align-self-end
+      // Estrellas doradas
+      svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gold" class="mx-1" viewBox="0 0 16 16")
+        path(d="M3.612 15.443 4.64 9.92.763 6.173l5.145-.748L8 0l2.092 5.425 5.145.748-3.877 3.747 1.028 5.523L8 12.347l-4.389 3.096z")
+      svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gold" class="mx-1" viewBox="0 0 16 16")
+        path(d="M3.612 15.443 4.64 9.92.763 6.173l5.145-.748L8 0l2.092 5.425 5.145.748-3.877 3.747 1.028 5.523L8 12.347l-4.389 3.096z")
+      svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gold" class="mx-1" viewBox="0 0 16 16")
+        path(d="M3.612 15.443 4.64 9.92.763 6.173l5.145-.748L8 0l2.092 5.425 5.145.748-3.877 3.747 1.028 5.523L8 12.347l-4.389 3.096z")
+
+      // Estrellas grises
+      svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ccc" class="mx-1" viewBox="0 0 16 16")
+        path(d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256a.513.513 0 0 0 .746-.592l-.83-4.73 3.523-3.356a.513.513 0 0 0-.285-.874l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.194l-4.898.696a.513.513 0 0 0-.285.874l3.523 3.356-.83 4.73z")
+      svg(xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ccc" class="mx-1" viewBox="0 0 16 16")
+        path(d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256a.513.513 0 0 0 .746-.592l-.83-4.73 3.523-3.356a.513.513 0 0 0-.285-.874l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.194l-4.898.696a.513.513 0 0 0-.285.874l3.523 3.356-.83 4.73z")
+
+  // Nombre y descripción (debajo de la fila)
+  p.fs-5.mb-0.mt-2 Nombre
+  p.small.mb-0 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    | Corporis quisquam ut, itaque deleniti inventore praesentium quae,
+    | rem alias animi magni dolores tempora molestias quidem autem earum est numquam!
