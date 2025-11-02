@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+    .container
+        h2 Clientes amigos
+        p Costumbres que endulzarán tu día
+
+        .row
+            each i in [1, 2, 3, 4, 5, 6]
+                .one-third.column
+                    img(src="../../images/cliente#{i}.jpg" alt="Cliente amigo" style="width:100%; border-radius:8px;")
+
+        .u-full-width
+            a.button.button-primary(href="#") Haz tu pedido NO SE ME CREA elarchivo compilado no se si hay algo mal
