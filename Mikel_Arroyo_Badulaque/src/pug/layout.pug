@@ -1,0 +1,20 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title El Badulaque
+        // CSS
+        link(rel="stylesheet" href="../../css/normalize.css")
+        link(rel="stylesheet" href="../../css/skeleton.css")
+        link(rel="stylesheet" href="../../css/mistEstilos.css")
+
+    body
+        
+        header
+            include navbar.pug
+        main
+            .container
+                block content
+        footer
+            include footer.pug
