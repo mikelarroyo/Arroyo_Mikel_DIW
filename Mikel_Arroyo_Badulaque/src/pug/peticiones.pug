@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+    h2(style="margin-top: 3rem; text-align:center;") Peticiones
+    p(style="text-align:center;") ¡Cuéntanos qué te gustaría encontrar en El Badulaque!
+
+    form(action="#" method="post" class="row")
+        .six.columns
+            label(for="nombre") Nombre
+            input.u-full-width(type="text" id="nombre" name="nombre" placeholder="Tu nombre")
+
+        .six.columns
+            label(for="email") Email
+            input.u-full-width(type="email" id="email" name="email" placeholder="Tu correo electrónico")
+
+        label(for="mensaje") Mensaje
+        textarea.u-full-width(id="mensaje" name="mensaje" placeholder="Escribe aquí tu petición o sugerencia...")
+
+        input.button-primary(type="submit" value="Enviar petición")
