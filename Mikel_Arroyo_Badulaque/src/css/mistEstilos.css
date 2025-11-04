@@ -18,7 +18,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #e74c3c; /* rojo tipo caramelo */
+  color: #e74c3c; 
 }
 nav.container {
   max-width: 100%;
