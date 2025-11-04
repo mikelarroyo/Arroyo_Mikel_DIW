@@ -1,4 +1,11 @@
 {
     "compile-hero.disable-compile-files-on-did-save-code": false,
+    "compile-hero.compile-files.on-did-save-code": true,
+    "compile-hero.enable-watch": true,
+    "compile-hero.watch": [
+        "src/pug/**/*.pug"
+    ],
+    "compile-hero.save-path": "/src/pug/dist",
+    "compile-hero.pug-output-extension": ".html",
     "liveServer.settings.port": 5501
 }
