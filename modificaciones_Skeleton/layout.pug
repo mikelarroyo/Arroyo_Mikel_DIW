@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  include cabecera
+</head>
+<body>
+  .container
+    .row
+      .twelve.columns 
+        header
+          h1 El badulaque
+    .row
+      .twelve.columns 
+        ul.nav_horizontal
+          li: a(href="home.html") Home 
+          li: a(href="amigos.html") Amigos
+          li: a(href="peticiones.html") Peticiones
+          li: a(href="encargos.html") Encargos
+    .row
+      .twelve.columns
+        block content
+    .row
+      .twelve.columns
+        include footer
+
+</body>
+</html>
+
+

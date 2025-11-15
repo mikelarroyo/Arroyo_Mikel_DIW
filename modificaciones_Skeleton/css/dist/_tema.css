@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* =============================
+   TEMA CANDY — SKELETON
+   ============================= */
+/* FONDO + TIPOGRAFÍA */
+body {
+  background: #fff7fb;
+  /* rosa pastel */
+  color: #333;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+/* TITULOS */
+h1, h2, h3 {
+  color: #ff4fa3;
+  /* fucsia pastel */
+  font-weight: 600;
+}
+
+/* LINKS */
+a {
+  color: #ff2f8e;
+  /* rosita palo */
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #d91f72;
+}
+
+/* BOTÓN PRIMARY */
+.button-primary {
+  background: #ff4fa3;
+  border-color: #ff2f8e;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.button-primary:hover {
+  background: #ff2f8e;
+  border-color: #d91f72;
+}
+
+/* BOTÓN SECUNDARIO */
+.button {
+  border-radius: 8px;
+}
+
+/* NAVBAR ESTILO CANDY */
+ul.nav_horizontal {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(255, 79, 163, 0.15);
+  display: flex;
+  gap: 25px;
+}
+
+ul.nav_horizontal li a {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* NAV VERTICAL */
+ul.nav_vertical {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(255, 79, 163, 0.15);
+}
+
+ul.nav_vertical li {
+  margin: 10px 0;
+}
+
+/* TARJETAS (CARDS) */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 20px rgba(255, 79, 163, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 25px rgba(255, 79, 163, 0.25);
+}
+
+/* IMÁGENES BONITAS */
+img {
+  border-radius: 12px;
+}
+
+/* INPUTS FORM */
+input,
+textarea,
+select {
+  border-radius: 10px !important;
+  border-color: #ffb3d6 !important;
+  background: #fff2fa !important;
+  transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff4fa3 !important;
+  box-shadow: 0 0 10px rgba(255, 79, 163, 0.3);
+}
+
+/* FOOTER */
+footer {
+  background: #ffdef1;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ffb7d9;
+}
+
+footer p,
+footer span {
+  color: #a82461;
+  font-weight: 500;
+}
+
+/* SEPARADORES */
+hr {
+  border-color: #ffb7d9;
+}

@@ -1,0 +1,31 @@
+@mixin generar-columnas( $dimension ){
+    $i: 0;
+    $dif_columns: 12;
+
+    // Primera columna (one)
+    .one-#{$dimension}.columns{
+        width: 4.66666666667%;
+    }
+
+    // Bucle de todos los tamaños de columna
+    @each $tam in one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve {
+
+        // Genera .one-lg.columns ... .twelve-lg.columns
+        .#{$tam}-#{$dimension}.columns {
+            width: 4.66666666667% + $i*8.66666666667%;
+        }
+
+        // Genera .offset-lg-by-one.column ... .offset-lg-by-twelve.column
+        .offset-#{$dimension}-by-#{$tam}.column,
+        .offset-#{$dimension}-by-#{$tam}.columns{
+            margin-left: 8.66666666667%*($i+1);
+        }
+
+        $i: $i + 1;
+    }
+
+    // Reset para twelve (evitar desplazamientos raros)
+    .twelve-#{$dimension}.columns{
+        margin-left: 0;
+    }
+}
